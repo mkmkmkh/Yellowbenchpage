@@ -118,7 +118,7 @@ p{
 
 .profile{
     width: 40%;
-    border: solid 1px black;
+    border: solid 1px var(--background-graycolor);
     border-radius: 7%;
     background-color: white;
 }
@@ -182,7 +182,7 @@ p{
     flex-direction: column;
     align-items: center;    
     justify-content: space-around;
-    border: solid 1px black;
+    border: solid 1px var(--background-graycolor);
     border-radius: 7%;  
 }
 .dashboard *{
@@ -216,6 +216,11 @@ p{
 
 
 /* second div */
+.allsongs{
+    border: solid 1px var(--background-graycolor);
+    border-radius: 5%;
+}
+
 .songs{
     display: flex;
     justify-content: space-between;
@@ -242,12 +247,14 @@ p{
 }
 .songs .title{
     font-size: 30px;
-    padding-left: 30px;
+    margin-left: 20px;
     margin-bottom: 20px;
+
 }
 .songs .listen__songs{
     display: flex;
     align-items: center;
+    margin-right: 20px;
 }
 .songs .listen__songs .go__listen{
     padding-right: 8px;
@@ -364,12 +371,20 @@ p{
 /* profile ans dashboard for ph */
     .profileanddashboard{
         flex-direction: column;
+        align-items: center;
     }
     .profile{
-        width: 100%;
+        width: 90%;
+        margin-bottom: 30px;
+    }
+    .profile__list .words{
+        font-size: 14px;
     }
     .dashboard{
-        width: 100%;
+        width: 90%;
+    }
+    h3.title{
+        margin: 10px 0px;
     }
     .songs__sort{
         display: flex;
@@ -391,16 +406,16 @@ p{
 
     }
     .songs__sort .songs__album {
-        width:80%;
+        width:70%;
     }
     .songs__sort .songs__single{
-        width:80%;
+        width:70%;
     }
     .songs__sort .songs__ost{
-        width:80%;
+        width:70%;
     }
     .songs__sort .songs__duet{
-        width:80%;
+        width:70%;
     }
 
 
