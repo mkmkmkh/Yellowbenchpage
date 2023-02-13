@@ -1,0 +1,407 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&family=Rowdies:wght@300&display=swap');
+
+:root{
+    --text-color: #030303;
+    --background-color: #f5ff65;
+    --accent-color: #c0cc30;
+    --background-graycolor: #F1F0E6;
+
+
+
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    /* 고딕 한글, 고딕 영어, 귀여운 한영 */
+    font-family: 'Noto Sans KR', sans-serif;
+    font-family: 'Rowdies', cursive;
+    font-family: 'Poor Story', cursive;
+}
+
+h3{
+    font-family: 'Poor Story', cursive;
+    font-size: 20px;
+}
+
+h3.expression{
+    padding-top: 8px;
+}
+
+a{
+    text-decoration :none;
+    color: var(--text-color);
+}
+
+p{
+    
+}
+/* navvar */
+.navbar{
+    display : flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--accent-color);
+}
+
+.navbar__logo{
+    display: flex;
+    font-size: 24px;
+    color:yellow;
+    padding : 8px 12px;
+    padding-left: 8px;
+    align-items: center;
+}
+
+.navbar__logo IMG{
+    width: 40px;
+    border-radius: 30%;
+}
+
+.navbar__logo a{
+    padding-left: 8px;
+    font-family: 'Rowdies', cursive;
+}
+
+.navbar__menu{
+    font-size: 20px;
+    display : flex;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar__menu li{
+    padding: 8px 24px;
+}
+
+.navbar__links{
+    list-style: none;
+    display :flex;
+    font-size: 24px;
+    padding-left: 50px;
+}
+
+.navbar__links li{
+    margin : 8px 6px;
+    font-size: 16px;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+.navbar__links .navbar__links__expression{
+    font-size: 16px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+
+.navbar__links li:nth-child(2){
+    filter: invert(13%) sepia(99%) saturate(6199%) hue-rotate(2deg) brightness(95%) contrast(115%);
+}
+.navbar__links li:nth-child(3){
+    filter: invert(24%) sepia(66%) saturate(5325%) hue-rotate(301deg) brightness(91%) contrast(122%); 
+}
+.navbar__links li:nth-child(4){
+    filter: invert(47%) sepia(78%) saturate(4830%) hue-rotate(208deg) brightness(93%) contrast(78%); 
+}
+.navbar__links li:nth-child(5){
+    filter: invert(79%) sepia(58%) saturate(6674%) hue-rotate(340deg) brightness(100%) contrast(90%);
+}
+/* first div */
+.profileanddashboard{
+    background-color: white;
+    display: flex;
+    justify-content: space-around;
+    margin: 50px 20px;
+} 
+
+.profile{
+    width: 40%;
+    border: solid 1px black;
+    border-radius: 7%;
+    background-color: white;
+}
+.profile__photoandlist{
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.profile__photo{
+    margin: 10px 10px;
+}
+.profile__photo img{
+    height: auto;
+    max-width: 100%;
+    border-radius: 30%;
+}
+.profile__list{
+    background-color: var(--background-graycolor);
+    padding: 20px 20px;
+    border: solid 1px var(--background-color);
+    border-radius: 10%;
+    height: auto;
+    max-width: 100%;
+    
+}
+.profile__list .words{
+    font-size: 20px;
+}
+.profile__list .date{
+    padding-right: 8px;
+    font-size: 12px;
+}
+.profile__list .profile__list__songs ul{
+    font-size: 24px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.profile__list .profile__list__school ul{
+    font-size: 15px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    overflow: hidden;
+}
+.introduce{
+    margin: 10px 10px;
+    margin-top: 0;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+}
+
+.dashboard{
+    width: 40%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;    
+    justify-content: space-around;
+    border: solid 1px black;
+    border-radius: 7%;  
+}
+.dashboard *{
+    padding: 0;
+    margin: 0;
+}
+.dashboard .recent{
+    background-color: var(--background-graycolor);
+    border: solid 1px var(--background-color);
+    border-radius: 5%;
+    width: 90%;
+    height: 35%;
+    padding: 10px 10px;
+    
+}
+.dashboard .title{
+    font-size: 24px;
+}
+.dashboard .recent .snsphotoandwordtag{
+    display: flex;
+}
+.dashboard .recent .snsphotoandwordtag ul{
+    padding: 10px;
+}
+.dashboard .recent .snsphotoandwordtag .snsphoto{
+    width: 30%;
+}
+.dashboard .recent .snsphotoandwordtag .writtenandtag{
+    width: 70%;
+}
+
+
+/* second div */
+.songs{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.go__listen{
+    font-size: 20px;
+}
+.recentsonglogo{
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+}
+.recentsonglogo ul{
+    padding: 0px 2px;
+}
+.recentsonglogo ul:nth-child(1){
+    filter: invert(13%) sepia(99%) saturate(6199%) hue-rotate(2deg) brightness(95%) contrast(115%);
+}
+.recentsonglogo img{
+    width:30px;
+    height: 30px;
+}
+.songs .title{
+    font-size: 30px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+}
+.songs .listen__songs{
+    display: flex;
+    align-items: center;
+}
+.songs .listen__songs .go__listen{
+    padding-right: 8px;
+}
+.songs .listen__songs .logo {
+    display: flex;
+}
+.songs .listen__songs .logo ul{
+    padding: 0px 8px;
+}
+
+.songs__sort{
+    display: flex;
+    justify-content: space-around;
+}
+.songs__sort .song__sort__title {
+    font-size: 40px;
+    display: flex;
+    padding-left: 0;
+    padding: 8px 20px;
+    margin: 40px 0px;
+    justify-content: center;
+}
+.songs__sort ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.songs__sort  .song__title{
+    font-size: 18px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    margin: 8px 0px;
+    margin-left: 0;
+}
+.songs__sort  .song__with{
+    align-items: baseline;
+    font-size: 12px;
+    padding: 0;
+}
+.songs__sort  .song__date{
+    padding-left: 16px;
+    color: var(--accent-color);
+}
+.songs__sort .songs__album {
+    background-color: var(--background-graycolor);
+    padding: 0px 20px;
+    width:18%;
+    border: solid 1px var(--background-color);
+    border-radius: 5%;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.songs__sort .songs__single{
+    background-color: var(--background-graycolor);
+    padding: 0px 20px;
+    width:18%;
+    border: solid 1px var(--background-color);
+    border-radius: 5%;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.songs__sort .songs__ost{
+    background-color: var(--background-graycolor);
+    padding: 0px 20px;
+    width:18%;
+    border: solid 1px var(--background-color);
+    border-radius: 5%;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+.songs__sort .songs__duet{
+    background-color: var(--background-graycolor);
+    padding: 0px 20px;
+    width:18%;
+    border: solid 1px var(--background-color);
+    border-radius: 5%;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+/* FOR SMARTPHONE */
+@media screen and (max-width: 768px) {
+/* navbar for ph */
+    .navbar{
+        display : flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--accent-color);
+    }
+
+    .navbar__menu{
+        font-size: 16px;
+        display : flex;
+        list-style: none;
+        padding-left: 0;        
+    }
+    
+    .navbar__menu li{
+        padding: 4px 8px;
+    }
+
+    h3{
+        font-size: 12px; 
+    }
+    h3.expression{
+        padding-top: 12px;
+    }
+/* profile ans dashboard for ph */
+    .profileanddashboard{
+        flex-direction: column;
+    }
+    .profile{
+        width: 100%;
+    }
+    .dashboard{
+        width: 100%;
+    }
+    .songs__sort{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    .songs__sort > span{
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .songs__sort ul{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+
+    }
+    .songs__sort .songs__album {
+        width:80%;
+    }
+    .songs__sort .songs__single{
+        width:80%;
+    }
+    .songs__sort .songs__ost{
+        width:80%;
+    }
+    .songs__sort .songs__duet{
+        width:80%;
+    }
+
+
+}
