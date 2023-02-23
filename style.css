@@ -209,10 +209,10 @@ p{
     padding: 10px;
 }
 .dashboard .recent .snsphotoandwordtag .snsphoto{
-    width: 30%;
+    width: 27%;
 }
 .dashboard .recent .snsphotoandwordtag .writtenandtag{
-    width: 70%;
+    width: 67%;
 }
 
 
@@ -384,7 +384,7 @@ p{
     .dashboard{
         width: 90%;
     }
-    h3.title{
+    .dashboard .title{
         font-size: 20px;
         margin: 10px 0px;
     }
