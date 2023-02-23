@@ -224,9 +224,19 @@ p{
 
 .songs{
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
+}
+
+.songs .title{
+    align-items: center;
+    
+}
+.songs .listen{
+    display: flex;
     align-items: flex-end;
 }
+
 
 .go__listen{
     font-size: 20px;
@@ -387,6 +397,14 @@ p{
     .dashboard .title{
         font-size: 20px;
         margin: 10px 0px;
+    }
+    .songs{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .songs .listen{
+        padding-left: 100px;
     }
     .songs__sort{
         display: flex;
