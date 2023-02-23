@@ -150,10 +150,11 @@ p{
 }
 .profile__list .date{
     padding-right: 8px;
-    font-size: 12px;
+    font-size: 15px;
 }
 .profile__list .profile__list__songs ul{
-    font-size: 24px;
+    font-size: 15px;
+    margin : 0;
     display: -webkit-box;
     -webkit-box-orient: vertical;
     -webkit-line-clamp: 1;
