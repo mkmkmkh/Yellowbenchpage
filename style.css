@@ -377,10 +377,7 @@ p{
         width: 90%;
         margin-bottom: 30px;
     }
-    .profile__list {
-        font-size: 14px;
-    }
-    .words{
+    .profile__list .words{
         font-size: 10px;
     }
     .dashboard{
