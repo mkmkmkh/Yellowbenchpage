@@ -195,7 +195,6 @@ p{
     border: solid 1px var(--background-color);
     border-radius: 5%;
     width: 90%;
-    height: 35%;
     padding: 10px 10px;
     
 }
@@ -209,10 +208,10 @@ p{
     padding: 10px;
 }
 .dashboard .recent .snsphotoandwordtag .snsphoto{
-    width: 27%;
 }
 .dashboard .recent .snsphotoandwordtag .writtenandtag{
-    width: 67%;
+    display: flex;
+    align-items: center;
 }
 
 
@@ -397,6 +396,11 @@ p{
     .dashboard .title{
         font-size: 20px;
         margin: 10px 0px;
+    }
+
+    
+    .go__listen{
+        font-size: 15px;
     }
     .songs{
         display: flex;

@@ -36,5 +36,5 @@ for image in images:
 time.sleep(0.5)
 driver.implicitly_wait(5)
 
-urllib.request.urlretrieve(img_url[0], 'recent' + ".jpg")
+urllib.request.urlretrieve(img_url[0], 'recent1' + ".jpg")
 time.sleep(0.5)
